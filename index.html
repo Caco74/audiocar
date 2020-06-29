@@ -6,11 +6,12 @@
     <title>JMA-AUDIOCAR</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="../js/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/57b3f1e47e.js" crossorigin="anonymous"></script> 
 </head>
 <body>
     <div class="contenedor">
-        <div class="container_head">
-            <img class="image_pres" src="image/fs4.jpg" alt="soluciones_web">
+        <div id="inicio" class="container_head">
             <div class="head">
                 <nav role="navigation">
                     <div id="menuToggle">
@@ -20,16 +21,13 @@
                         <span></span>
                         <ul id="menu">
                             <hr>
-                            <a href="#"><li>Inicio</li></a>
-                            <a href="#"><li>Productos</li></a>
-                            <a href="#"><li>Servicios</li></a>
-                            <a href="#"><li>Nosotros</li></a>
-                            <a href="#"><li>Contacto</li></a>
+                            <a href="#inicio"><li>Inicio</li></a>
+                            <a href="#prod"><li>Productos</li></a>
+                            <a href="#servicios"><li>Servicios</li></a>
+                            <a href="#nosotros"><li>Nosotros</li></a>
+                            <a href="#contacto"><li>Contacto</li></a>
                             <hr>
                             <a><li><h3>JMAAUDIOCAR</h3></li></a>
-                            <!-- <div class="jma">
-                                <span><li><h3>JMAAUDIOCAR</h3></li></span>
-                            </div> -->
                         </ul>
                     </div>
                 </nav>
@@ -37,35 +35,45 @@
             </div>
             <div class="text">
                 <h4>Los mejores equipos de car audio para vos..</h4>
-                <h2>Más que nuestro cliente</h2>
-                <h2>SOS NUESTRO AMIGO</h2>
+                <h3>Más que nuestro cliente</h3>
+                <h3>SOS NUESTRO AMIGO</h3>
             </div>
         </div>
 
         <div class="container">
-            <div class="productos_div">
+            <div id="prod" class="productos_div">
                 <div class="product">
-                    <img src="/image/stereos.png" alt="">
-                    <span><b>Stereos</b></span>
+                    <a href="#inicio" target="_blank" rel="noopener noreferrer" class="product_link">
+                        <img src="/image/stereos.png" alt="">
+                        <h2><b>Stereos</b></h2>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="/image/parlantes.png" alt="">
-                    <span><b>Parlantes</b></span>
+                    <a href="#inicio" target="_blank" rel="noopener noreferrer" class="product_link">
+                        <img src="/image/parlantes.png" alt="">
+                        <h2><b>Parlantes</b></h2>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="/image/subwoofers.png" alt="">
-                    <span><b>Subwoofers</b></span>
+                    <a href="#inicio" target="_blank" rel="noopener noreferrer" class="product_link">
+                        <img src="/image/subwoofers.png" alt="">
+                        <h2><b>Subwoofers</b></h2>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="/image/amplificadores.png" alt="">
-                    <span><b>Amplificadores</b></span>
+                    <a href="#inicio" target="_blank" rel="noopener noreferrer" class="product_link">
+                        <img src="/image/amplificadores.png" alt="">
+                        <h2><b>Amplificadores</b></h2>
+                    </a>
                 </div>
                 <div class="product">
-                    <img src="/image/marinos.png" alt="">
-                    <span><b>Marinos</b></span>
+                    <a href="#inicio" target="_blank" rel="noopener noreferrer" class="product_link">
+                        <img src="/image/marinos.png" alt="">
+                        <h2><b>Marinos</b></h2>
+                    </a>
                 </div>
             </div>
-            <div class="servicios">
+            <div id="servicios" class="servicios">
                 <div class="title">
                     <h2>Servicios</h2>
                     <p>Si tu vehículo no es tope de gama, nosotros te ofrecemos lo siguiente...</p>
@@ -82,10 +90,27 @@
                         <li class="services">Luces LED y CREELED</li>
                     </ul>
                 </div>
+                <div class="extras">
+                    <div class="ext_1">
+                        <h5>Polarizados</h5>
+                        <p>Obleas incluidas para la vtv.</p>
+                        <small>Desde $ 1000</small>
+                    </div>
+                    <div class="ext_2">
+                        <h5>Alarmas para autos y motos</h5>
+                        <p>Primeras marcas. Incluye instalación.</p>
+                        <small>Desde $ 2000</small>
+                    </div>
+                    <div class="ext_3">
+                        <h5>Equipos de audio</h5>
+                        <p>Ciento de accesorios de las mejores marcas.</p>
+                    </div>
+                </div>
             </div>
-            <div class="nosotros"></div>
-            <div class="contacto"></div>
-            <footer>
+            <div id="nosotros" class="nosotros">
+                <p><strong>JMA-AUDIOCAR</strong> Contamos con basta trayectoria en el mercado, dedicada a la colocación de polarizados, instalación de alarmas para autos y motos, audio, como así también a la venta y colocación de todo tipo de accesorios.</p> 
+            </div>
+            <div id="contacto" class="contacto">
                 <div class="footer_one">
                     <title>Suscribete para recibir nuevos newslleter, actualizaciones y mucho más por email</title>
                     <span>Suscribete para recibir nuevos newslleter, actualizaciones y mucho más por email</span>
@@ -96,80 +121,34 @@
                         </div>
                     </form>
                 </div>
+            </div>
+            <footer>                
+                <a href="https://api.whatsapp.com/send?phone=5493471622079&text=Hola%20JMAAUDIOCAR,&nbsp;me&nbsp;pueden&nbsp;ayudar??" class="appWhatsapp" target="_blank">
+                    <img src="/image/whatsapp.png" alt="Whatsapp">
+                </a>
                 <div class="footer_two">
-                    <h4>Síguenos en nuestras redes</h4>
+                    <div class="redes">
+                        <h4>Seguinos :</h4>
+                        <div class="red">
+                            <a href="https://www.facebook.com/JMAAUDIOCAR/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook " ></i></a>
+                        </div>
+                        <div class="red">
+                            <a href="https://www.instagram.com/jmaaudiocar/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram " ></i></a>
+                        </div>
+                    </div>
+                    <div class="footer_data">
+                        <img src="image/logo-2.png" class="img-logo" alt="JMAAUDIOCAR">
+                        <p><i class='fa fa-map-marker'></i> JMAAUDIOCAR, Calle 24 567. Las Parejas, Santa Fe.</p>                        
+                        <p><i class='fa fa-phone'></i> Tel: +54 3471 622079</p>
+                        <p><i class='fa fa-envelope'></i> E-mail: info@audiocar.com.ar</p>
+                        <p><i class='fa fa-clock-o'></i> Lunes a Viernes de 8 a 19</p>
+                        <p><i class='fa fa-whatsapp'></i> Whatsapp: +54 3471 622079</p>
+                    </div>
                 </div>
+                <span>Coprigth ©MoraBeat . Todos los derechos reservados.</span>
             </footer>
         </div>
-
     </div> <!-- Fin Container-->
-    <!-- <header>
-        <div class="cabecera">
-            <nav role="navigation">
-                <div id="menuToggle">
-                    <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul id="menu">
-                        <hr>
-                        <a href="#"><li>Inicio</li></a>
-                        <a href="#"><li>Productos</li></a>
-                        <a href="#"><li>Info</li></a>
-                        <a href="#"><li>Nosotros</li></a>
-                        <a href="#"><li>Contacto</li></a>
-                        <hr>
-                            <div>
-                                <span><li><h3>JMAAUDIOCAR</h3></li></span>
-                            </div>
-                    </ul>
-                </div>
-            </nav>
-            <div class="logo"><img src="image/logo-2.png" class="img-logo" alt="JMAAUDIOCAR"></div>
-        </div>  
-        <div class="slider">
-            <div class="text">
-                <p>Los mejores equipos de car audio para vos</p>
-            </div>
-            <div class="text">
-                <p>Más que nuestro cliente</p>
-            </div>
-            <div class="text">
-                <p>SOS NUESTRO AMIGO</p>
-            </div>
-        </div>
-             
-    </header> -->
-
-    <!-- Contenido Principal de la web -->
-    <main>
-        <article>
-            
-        </article>
-        <article>
-            <!-- <div id="slider" class="centrado">
-                <div class="sliderfotos">
-                    <div class="fotoslide" id="fs1">
-                        <img src="image/fs1.jpg" width="100px" alt="">
-                    </div>
-                    <div class="fotoslide" id="fs2">
-                        <img src="image/fs2.jpg" width="100px" alt="">
-                    </div>
-                    <div class="fotoslide" id="fs3">
-                        <img src="image/fs3.jpg" width="100px" alt="">
-                    </div>
-
-                </div>
-            </div> -->
-        </article>
-    </main>
-
-    <!-- Pié de página, incluido en todas las pantallas -->
-    <!-- <footer>
-        <span>Coprigth @MoraBeat . Todos los derechos reservados.</span>
-    </footer> -->
-
-
-    
 </body>
 </html>
+
